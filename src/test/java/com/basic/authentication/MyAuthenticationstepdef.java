@@ -18,7 +18,7 @@ public class MyAuthenticationstepdef {
 	public void user_hit_the_get_request_with_username_and_password(){
 		//Response resp = 
 		resp = RestAssured.given().auth().basic("username", "password").relaxedHTTPSValidation().
-					when().get("http://www.google.com");
+					when().get("http://ergast.com/api/f1/2017");
 		
 	}
 	

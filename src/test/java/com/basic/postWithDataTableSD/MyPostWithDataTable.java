@@ -32,7 +32,7 @@ public class MyPostWithDataTable {
 		
 		//Read data from file
 		String data = ""; 
-	    data = new String(Files.readAllBytes(Paths.get("D:\\IBM\\workspace\\CucuRestAssured\\src\\test\\java\\com\\basic\\postFromTextFileSD\\user.json"))); 
+	    data = new String(Files.readAllBytes(Paths.get("D:\\selenium\\workspace\\CucRestAssured\\src\\test\\java\\com\\basic\\postWithDataTableSD\\user.json"))); 
 	    System.out.println("json in String ==== " +data);
 	    
 	    //Update the data
@@ -72,7 +72,7 @@ public class MyPostWithDataTable {
 		int statusCode = resp.getStatusCode();
 		int expStatusCode = Integer.parseInt(values6);
 		
-		Assert.assertTrue(expStatusCode==statusCode);
+		Assert.assertEquals(expStatusCode,statusCode);
 		
 		//check id is greater than zero
 		String idValue = resp.getBody().jsonPath().get("id");
