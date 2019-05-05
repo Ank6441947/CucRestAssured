@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
 			
 			//dryRun=true,
 			//tags={"@Important"}, //All scenario executed if this is tag for feature file
-			 //tags={"@Smoke"}, //only tag with @smoke
-			tags={"@Smoke","@Regression"}, //AND condition
+			 tags={"@Smoke"}, //only tag with @smoke
+			//tags={"@Smoke","@Regression"}, //AND condition
 			 //tags={"@Smoke,@Regression"} , // OR condition
 			//tags={"~@Smoke"}, //will run all the test cases excluding smoke test
 			monochrome=true,//by default monochrome is false. monochrome=true makes the logs more readable

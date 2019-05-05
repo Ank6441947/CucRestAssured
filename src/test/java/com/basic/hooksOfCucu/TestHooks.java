@@ -20,6 +20,7 @@ public class TestHooks {
 		req = RestAssured.given()
 				.accept(ContentType.JSON);
 				//.headers("","");
+		System.out.println("entering url");
 	}
 	
 	@Given("^user hit the get request$")
